@@ -1,16 +1,11 @@
 
 USE employee_db
 
--- to insert new data into the database 
--- INSERT INTO -> table_name(column1, column2 etc)
--- VALUES(newdata1, newdata2 etc)
- 
 INSERT INTO departments (id, dpt_name)
 VALUES (1, "Editorial"),
        (2, "Production"),
        (3, "Marketing"),
        (4, "Sales");
-    
 
 INSERT INTO roles (id, title, salary, dpt_id)
 VALUES (1, "Commissioning Editor", 100000, 1),
@@ -25,7 +20,6 @@ VALUES (1, "Commissioning Editor", 100000, 1),
 
        (8, "Sales Rep", 65000, 4),
        (9, "Sales Admin", 40000, 4);
-
 
 INSERT INTO employees (id, first_name, last_name, role_id, manager_id)
 VALUES (1, "William S", "Burroughs", 1, NULL),
@@ -48,10 +42,3 @@ VALUES (1, "William S", "Burroughs", 1, NULL),
        (14, "Jean-Paul", "Sartre", 9, 13),
        (15, "Chuck", "Palahniuk", 9, 13),
        (16, "Hubert", "Selby Jr", 9, 13);
-
-
-       
-
-
-
-
